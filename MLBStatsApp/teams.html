@@ -15,7 +15,7 @@
     <meta name="theme-color" content="#fafafa">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script>
         function displayTeam(teamID) {
             window.location.href='roster.html?team='+teamID
@@ -48,7 +48,7 @@
 
             var team,teams;
             $.getJSON(
-                "http://statsapi.mlb.com/api/v1/teams?sportId=1",
+                "https://statsapi.mlb.com/api/v1/teams?sportId=1",
                 function (data) {
                     teams = data["teams"];
                     for (team in teams) {
