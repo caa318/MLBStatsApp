@@ -10,7 +10,7 @@ function getUrlVars() {
 
 
 $.getJSON(
-  "http://statsapi.mlb.com/api/v1/teams?sportId=1",
+  "https://statsapi.mlb.com/api/v1/teams?sportId=1",
   function (data){
     teams = data["teams"];
     for (team in teams) {
